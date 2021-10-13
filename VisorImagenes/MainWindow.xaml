@@ -1,0 +1,45 @@
+﻿<Window x:Class="VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisorImagenes"
+        mc:Ignorable="d"
+        Icon="Contenido/shaq.ico"
+        Title="VisorImagenes" Height="450" Width="700" MinWidth="650" MinHeight="450">
+    <DockPanel>
+            <DockPanel DockPanel.Dock="Bottom"  Background="LightBlue" Margin="15">
+                <TextBlock Margin="10" FontFamily="Rubik" HorizontalAlignment="Left" FontSize="20">Nº de imagenes: 10</TextBlock>
+                <TextBlock Margin="10" FontFamily="Rubik" HorizontalAlignment="Right" FontSize="20">Diseñado por josecar</TextBlock>
+            </DockPanel>
+       
+        <Border DockPanel.Dock="Right"  Background="LightGreen" BorderThickness="2" CornerRadius="3" BorderBrush="Black" Margin="10">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <Button Margin="5">Añadir Imagen</Button>
+                    <Button Margin="5" >Eliminar Imagen</Button>
+                    <Button Margin="5">Eliminar todas</Button>
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
+                    <Button Margin="5">Rotar</Button>
+                    <Button Margin="5">Recortar</Button>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+
+        <StackPanel Margin="10" DockPanel.Dock="Left">
+            <TextBlock TextAlignment="Center" FontSize="40" FontFamily="Rubik">Visor de imágenes</TextBlock>
+            <WrapPanel>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+            </WrapPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>
