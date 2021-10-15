@@ -24,7 +24,7 @@
             <Setter Property="FontFamily" Value="Rubik"></Setter>
             <Setter Property="FontSize" Value="20"></Setter>
         </Style>
-        <Style TargetType="{x:Type Border}">
+        <Style TargetType="{x:Type Border}" x:Key="Borde">
             <Setter Property="Background" Value="LightGreen"></Setter>
             <Setter Property="BorderThickness" Value="2"></Setter>
             <Setter Property="CornerRadius" Value="3"></Setter>
@@ -43,7 +43,7 @@
                 <TextBlock HorizontalAlignment="Right">Diseñado por josecar</TextBlock>
             </DockPanel>
        
-        <Border DockPanel.Dock="Right">
+        <Border DockPanel.Dock="Right" Style="{DynamicResource Borde}">
             <DockPanel>
                 <StackPanel DockPanel.Dock="Top">
                     <Button>Añadir Imagen</Button>
