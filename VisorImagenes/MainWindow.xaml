@@ -7,22 +7,52 @@
         mc:Ignorable="d"
         Icon="Contenido/shaq.ico"
         Title="VisorImagenes" Height="450" Width="700" MinWidth="650" MinHeight="450">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="Source" Value="Contenido/shaq.jpg"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="FontFamily" Value="Rubik"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="LightGreen"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+
+
+
+
+    </Window.Resources>
+    
     <DockPanel>
             <DockPanel DockPanel.Dock="Bottom"  Background="LightBlue" Margin="15">
-                <TextBlock Margin="10" FontFamily="Rubik" HorizontalAlignment="Left" FontSize="20">Nº de imagenes: 10</TextBlock>
-                <TextBlock Margin="10" FontFamily="Rubik" HorizontalAlignment="Right" FontSize="20">Diseñado por josecar</TextBlock>
+                <TextBlock HorizontalAlignment="Left">Nº de imagenes: 10</TextBlock>
+                <TextBlock HorizontalAlignment="Right">Diseñado por josecar</TextBlock>
             </DockPanel>
        
-        <Border DockPanel.Dock="Right"  Background="LightGreen" BorderThickness="2" CornerRadius="3" BorderBrush="Black" Margin="10">
+        <Border DockPanel.Dock="Right">
             <DockPanel>
                 <StackPanel DockPanel.Dock="Top">
-                    <Button Margin="5">Añadir Imagen</Button>
-                    <Button Margin="5" >Eliminar Imagen</Button>
-                    <Button Margin="5">Eliminar todas</Button>
+                    <Button>Añadir Imagen</Button>
+                    <Button >Eliminar Imagen</Button>
+                    <Button>Eliminar todas</Button>
                 </StackPanel>
                 <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
-                    <Button Margin="5">Rotar</Button>
-                    <Button Margin="5">Recortar</Button>
+                    <Button>Rotar</Button>
+                    <Button>Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
@@ -31,14 +61,14 @@
         <StackPanel Margin="10" DockPanel.Dock="Left">
             <TextBlock TextAlignment="Center" FontSize="40" FontFamily="Rubik">Visor de imágenes</TextBlock>
             <WrapPanel>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
-                <Image Margin="5" Source="Contenido/shaq.jpg" Width="100" ></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
+                <Image></Image>
             </WrapPanel>
         </StackPanel>
     </DockPanel>
